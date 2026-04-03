@@ -390,8 +390,8 @@ function Show-Menu {
     Write-Host "  [S]  Settings (reorder, toggle, default model)" -ForegroundColor Yellow
     Write-Host "  [0]  Exit" -ForegroundColor DarkGray
     Write-Host ""
-    Write-Host "  Tip: If API errors occur after model selection, run:" -ForegroundColor DarkGray
-    Write-Host "  powershell -ExecutionPolicy Bypass -File \"D:\AI\Claude code workspace\Claude_launcher\setup.ps1\"" -ForegroundColor DarkGray
+    Write-Host "  Tip: If API errors occur after model selection, run setup.ps1 to repair PATH:" -ForegroundColor DarkGray
+    Write-Host "  powershell -ExecutionPolicy Bypass -File setup.ps1" -ForegroundColor DarkGray
     Write-Host ""
 
     return $items
