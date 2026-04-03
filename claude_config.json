@@ -1,0 +1,157 @@
+﻿{
+  "settings": {
+    "timeout_ms": 300000,
+    "disable_nonessential_traffic": true,
+    "disable_experimental_betas": false
+  },
+  "providers": [
+    {
+      "id": "minimax",
+      "name": "MiniMax",
+      "enabled": true,
+      "base_url": "https://api.minimaxi.com/anthropic",
+      "api_key": "sk-cp-iwoBgR3mQgw8siWtdgSnUkut0T33YYh-ubLNPWPubeay9eTfz015m9SBPj_ZxRKfzYkzZSE1B6P9ait1PVqWqHcHLuHtfn9YA4DrMsq2_OHZo42IO-OiqF4",
+      "models": [
+        { "id": "MiniMax-M2.7",           "desc": "flagship (recommended)" },
+        { "id": "MiniMax-M2.5",           "desc": "lightning fast" },
+        { "id": "MiniMax-M2.1",           "desc": "previous flagship" }
+      ],
+      "fast_model": "MiniMax-M2.7",
+      "models_api": "https://api.minimax.io/v1/models",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "kimi",
+      "name": "Kimi (Moonshot)",
+      "enabled": true,
+      "base_url": "https://api.moonshot.cn/anthropic",
+      "api_key": "sk-pb36Guv6ZxN8D0dJip3UtLGTY4e7NT2ct20pymLGGZHjxLHB",
+      "models": [
+        { "id": "kimi-k2.5", "desc": "flagship multimodal" },
+        { "id": "kimi-k2",   "desc": "balanced" }
+      ],
+      "fast_model": "kimi-k2",
+      "models_api": "https://api.moonshot.cn/v1/models",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "enabled": true,
+      "base_url": "https://api.deepseek.com/anthropic",
+      "api_key": "",
+      "models": [
+        { "id": "deepseek-chat",     "desc": "V3 coding/general (recommended)" },
+        { "id": "deepseek-reasoner", "desc": "R1 deep reasoning" }
+      ],
+      "fast_model": "deepseek-chat",
+      "models_api": "https://api.deepseek.com/models",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "glm",
+      "name": "GLM / Zhipu AI",
+      "enabled": true,
+      "base_url": "https://open.bigmodel.cn/api/anthropic",
+      "api_key": "1a791276cb7f4d429d4db8de8a16cfdc.oTFKL8X7V7F8WNx9",
+      "models": [
+        { "id": "glm-4.7",     "desc": "flagship (recommended)" },
+        { "id": "glm-4.5-air", "desc": "fast & lightweight" }
+      ],
+      "fast_model": "glm-4.5-air",
+      "models_api": "https://open.bigmodel.cn/api/paas/v4/models",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "aliyun",
+      "name": "Aliyun Bailian / Qwen",
+      "enabled": true,
+      "base_url": "https://dashscope.aliyuncs.com/apps/anthropic",
+      "api_key": "",
+      "models": [
+        { "id": "qwen3-coder-plus", "desc": "Qwen3 Coder Plus (recommended)" },
+        { "id": "qwen3.5-plus",     "desc": "Qwen3.5 Plus general" },
+        { "id": "qwen3-coder-next", "desc": "Qwen3 Coder fast" }
+      ],
+      "fast_model": "qwen3-coder-next",
+      "models_api": "https://dashscope.aliyuncs.com/compatible-mode/v1/models",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter (400+ models)",
+      "enabled": true,
+      "base_url": "https://openrouter.ai/api",
+      "api_key": "",
+      "models": [
+        { "id": "anthropic/claude-sonnet-4-6",  "desc": "Claude Sonnet 4.6 via OR" },
+        { "id": "anthropic/claude-opus-4-6",    "desc": "Claude Opus 4.6 via OR" },
+        { "id": "deepseek/deepseek-chat",       "desc": "DeepSeek V3 via OR" },
+        { "id": "moonshotai/kimi-k2.5",         "desc": "Kimi K2.5 via OR" },
+        { "id": "google/gemini-2.5-pro",        "desc": "Gemini 2.5 Pro via OR" },
+        { "id": "openai/gpt-4o",                "desc": "GPT-4o via OR" }
+      ],
+      "fast_model": "deepseek/deepseek-chat",
+      "models_api": "https://openrouter.ai/api/v1/models",
+      "auth_type": "Bearer",
+      "openrouter_mode": true
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic Official (VPN required)",
+      "enabled": true,
+      "base_url": "https://api.anthropic.com",
+      "api_key": "",
+      "models": [
+        { "id": "claude-opus-4-6",           "desc": "Opus 4.6 most powerful" },
+        { "id": "claude-sonnet-4-6",         "desc": "Sonnet 4.6 balanced (recommended)" },
+        { "id": "claude-haiku-4-5-20251001", "desc": "Haiku 4.5 fastest" }
+      ],
+      "fast_model": "claude-haiku-4-5-20251001",
+      "models_api": "https://api.anthropic.com/v1/models",
+      "auth_type": "x-api-key",
+      "anthropic_mode": true
+    },
+    {
+      "id": "openai_proxy",
+      "name": "OpenAI (local proxy at localhost:8000)",
+      "enabled": false,
+      "base_url": "http://localhost:8000",
+      "api_key": "",
+      "models": [
+        { "id": "gpt-4o",      "desc": "GPT-4o" },
+        { "id": "gpt-4o-mini", "desc": "GPT-4o Mini fast" }
+      ],
+      "fast_model": "gpt-4o-mini",
+      "models_api": "",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "gemini_proxy",
+      "name": "Gemini (local proxy at localhost:8000)",
+      "enabled": false,
+      "base_url": "http://localhost:8000",
+      "api_key": "",
+      "models": [
+        { "id": "gemini-2.5-pro",   "desc": "Gemini 2.5 Pro" },
+        { "id": "gemini-2.5-flash", "desc": "Gemini 2.5 Flash fast" }
+      ],
+      "fast_model": "gemini-2.5-flash",
+      "models_api": "",
+      "auth_type": "Bearer"
+    },
+    {
+      "id": "custom",
+      "name": "AtomGit-GLM-5",
+      "enabled": false,
+      "base_url": "https://api-ai.gitcode.com",
+      "api_key": "_VhejDYAqteWMwfLRFsRLs4G",
+      "models": [
+        { "id": "YOUR_MODEL_ID", "desc": "custom model" }
+      ],
+      "fast_model": "YOUR_MODEL_ID",
+      "models_api": "https://api-ai.gitcode.com",
+      "auth_type": "Bearer"
+    }
+  ]
+}
