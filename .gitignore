@@ -1,0 +1,15 @@
+# API keys and session state
+last_selection.json
+claude_config.json
+
+# Claude Code local settings (contains permissions)
+.claude/settings.local.json
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~

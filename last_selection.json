@@ -6,7 +6,7 @@
     "provider_name":  "MiniMax",
     "base_url":  "https://api.minimaxi.com/anthropic",
     "auth_type":  "Bearer",
-    "timestamp":  "2026-04-03T13:47:32",
+    "timestamp":  "2026-04-03T13:53:39",
     "model":  "MiniMax-M2.7",
     "fast_model":  "MiniMax-M2.7"
 }

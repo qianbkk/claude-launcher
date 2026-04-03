@@ -1,4 +1,4 @@
-﻿{
+{
   "settings": {
     "timeout_ms": 300000,
     "disable_nonessential_traffic": true,
@@ -10,7 +10,7 @@
       "name": "MiniMax",
       "enabled": true,
       "base_url": "https://api.minimaxi.com/anthropic",
-      "api_key": "sk-cp-iwoBgR3mQgw8siWtdgSnUkut0T33YYh-ubLNPWPubeay9eTfz015m9SBPj_ZxRKfzYkzZSE1B6P9ait1PVqWqHcHLuHtfn9YA4DrMsq2_OHZo42IO-OiqF4",
+      "api_key": "YOUR_API_KEY_HERE",
       "models": [
         { "id": "MiniMax-M2.7",           "desc": "flagship (recommended)" },
         { "id": "MiniMax-M2.5",           "desc": "lightning fast" },
@@ -25,7 +25,7 @@
       "name": "Kimi (Moonshot)",
       "enabled": true,
       "base_url": "https://api.moonshot.cn/anthropic",
-      "api_key": "sk-pb36Guv6ZxN8D0dJip3UtLGTY4e7NT2ct20pymLGGZHjxLHB",
+      "api_key": "YOUR_API_KEY_HERE",
       "models": [
         { "id": "kimi-k2.5", "desc": "flagship multimodal" },
         { "id": "kimi-k2",   "desc": "balanced" }
@@ -53,7 +53,7 @@
       "name": "GLM / Zhipu AI",
       "enabled": true,
       "base_url": "https://open.bigmodel.cn/api/anthropic",
-      "api_key": "1a791276cb7f4d429d4db8de8a16cfdc.oTFKL8X7V7F8WNx9",
+      "api_key": "YOUR_API_KEY_HERE",
       "models": [
         { "id": "glm-4.7",     "desc": "flagship (recommended)" },
         { "id": "glm-4.5-air", "desc": "fast & lightweight" }
@@ -145,7 +145,7 @@
       "name": "AtomGit-GLM-5",
       "enabled": false,
       "base_url": "https://api-ai.gitcode.com",
-      "api_key": "_VhejDYAqteWMwfLRFsRLs4G",
+      "api_key": "YOUR_API_KEY_HERE",
       "models": [
         { "id": "YOUR_MODEL_ID", "desc": "custom model" }
       ],
